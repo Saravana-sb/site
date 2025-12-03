@@ -74,6 +74,43 @@
             color: var(--muted);
         }
 
+        .badge {
+            font-size: 0.75rem;
+            /* smaller text */
+            padding: 4px 8px;
+            /* tighter padding */
+            gap: 6px;
+            /* less space between icon and text */
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: linear-gradient(180deg, #0f1a2d, #0a1324);
+            color: var(--text);
+            max-width: 100%;
+            white-space: normal;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .badge-icon {
+            width: 36px;
+            /* smaller icon */
+            height: 36px;
+        }
+
+
+        @media (max-width: 480px) {
+            .badge {
+                font-size: 0.65rem;
+                padding: 3px 6px;
+            }
+
+            .badge-icon {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+
         .badges {
             display: flex;
             gap: 10px;
@@ -468,5 +505,6 @@
 </body>
 
 </html>
+
 
 
